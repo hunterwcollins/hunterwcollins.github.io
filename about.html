@@ -3,6 +3,11 @@
 <head>
     <title>About Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- owl picture -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+
 </head>
 <body>
     <h1>About Us</h1>
@@ -29,12 +34,32 @@
     <p>
         MOCK TESTIMONIALS
     </p>
-    <img src="/images/selfie_1.jpg" alt="Cherry Tree">
-    <img src="/images/selfie_2.jpg" alt="Cherry Tree">
-    <img src="/images/selfie_3.jpeg" alt="Cherry Tree">
-    <img src="/images/selfie_4.jpg" alt="Cherry Tree">
-    <img src="/images/Pro_photo.jpg" alt="Cherry Tree">
-    <img src="/images/selfie_5.jpg" alt="Cherry Tree">
-    <img src="/images/THEpicture.jpg" alt="Cherry Tree">
+        <img src="/images/selfie_1.jpg" alt="Cherry Tree">
+        <img src="/images/selfie_2.jpg" alt="Cherry Tree">
+        <img src="/images/selfie_3.jpeg" alt="Cherry Tree">
+        <img src="/images/selfie_4.jpg" alt="Cherry Tree">
+        <img src="/images/Pro_photo.jpg" alt="Cherry Tree">
+        <img src="/images/selfie_5.jpg" alt="Cherry Tree">
+        <img src="/images/THEpicture.jpg" alt="Cherry Tree">
+    <!-- picture owl -->
+    <div class="slider">
+        <img src="/images/selfie_1.jpg" alt="Image 1">
+        <img src="/images/selfie_2.jpg" alt="Image 2">
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
+</script>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
