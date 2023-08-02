@@ -8,48 +8,61 @@ body {
 nav {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
+nav h1 {
+    margin: 0;
+}
+
+.navigation a {
     color: white;
     text-decoration: none;
     margin-right: 10px;
 }
 
-nav a:hover {
+.navigation a:hover {
     color: #ddd;
-}
-
-h1 {
-    color: #333;
-}
-
-p {
-    color: #666;
 }
 
 .container {
     display: flex;
-    padding: 20px; /* add some padding around the container so the images and text don't touch the edges of the page */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .images, .text {
-    width: 50%;  /* take up half the container width */
+    flex: 1;
 }
 
 .images {
-    /* Optional: For aligning items in the center, if desired */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
     align-items: center;
-    gap: 20px; /* add some gap between images if you wish */
+    justify-content: center;
+}
+
+.text {
+    padding-left: 20px;
+}
+
+.text h2, .text h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text p {
+    color: #666;
 }
 
 img {
-    max-width: 100px; /* set a max width for the images to be 1/10th of the container's width */
+    max-width: 100%;
     height: auto;
-    object-fit: contain; /* ensure images retain their aspect ratios */
-    gap: 20px;
+    object-fit: cover;
+    border-radius: 10px; /* Add some roundness to the images */
 }
