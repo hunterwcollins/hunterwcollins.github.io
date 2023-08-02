@@ -30,7 +30,7 @@ nav h1 {
 
 .container {
     display: flex;
-    padding: 1px;
+    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -41,7 +41,7 @@ nav h1 {
 
 .images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
     gap: 20px;
     align-items: center;
     justify-content: center;
