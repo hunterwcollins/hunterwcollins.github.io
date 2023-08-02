@@ -1,1 +1,1 @@
-# hunterwcollins.github.io YEEEEEEEEEEEEEEEE
+# hunterwcollins.github.io
