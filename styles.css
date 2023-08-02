@@ -29,7 +29,23 @@ p {
     color: #666;
 }
 
+.container {
+    display: flex;
+}
+
+.images, .text {
+    width: 50%;  /* take up half the container width */
+}
+
+.images {
+    /* Optional: For aligning items in the center, if desired */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
