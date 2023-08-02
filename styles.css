@@ -51,4 +51,5 @@ img {
     max-width: 100px; /* set a max width for the images to be 1/10th of the container's width */
     height: auto;
     object-fit: contain; /* ensure images retain their aspect ratios */
+    gap: 20px;
 }
