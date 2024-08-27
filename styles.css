@@ -1,1 +1,29 @@
+/* Reset some default styling */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Centering content */
+.container {
+    text-align: center;
+}
+
+/* Styling for the heading */
+h1 {
+    font-size: 24px;
+    color: #0277bd; /* Darker blue text color */
+}
 
